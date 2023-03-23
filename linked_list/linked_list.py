@@ -29,7 +29,7 @@ class LinkedList:
 
     def remove(self, index):
         prev_node = self.__get_node(index - 1)
-        next_node = self.__get_node(index + 1)
+        next_node = prev_node.next_.next_
         prev_node.next_ = next_node
 
     def __get_node(self, index):
