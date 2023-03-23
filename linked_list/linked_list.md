@@ -49,8 +49,8 @@ new_node.next_ = prev_node.next_
 prev_node.next_ = new_node
 ```
 
-- new_node의 next에는 (index-1) 위치에 존재하는 노드의 next 값을 할당해야하므로 추가할 (index-1) 위치에 존재하는 노드를 찾아옴(prev_node)
-- prev_node 노드의 next 값을 new_node의 next에 할당
+- new_node의 next에는 (index-1) 위치에 존재하는 노드의 next를 할당해야하므로 추가할 (index-1) 위치에 존재하는 노드를 찾아옴(prev_node)
+- prev_node 노드의 next를 new_node의 next에 할당
 - prev_node 노드의 next에 new_node를 할당하여 리스트를 이어줌
 
 ## 삭제
