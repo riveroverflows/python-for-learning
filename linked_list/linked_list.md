@@ -10,6 +10,8 @@
 
 ### __get_node(index)
 
+- 시간복잡도: O(N)
+
 ```python
 node = self.head
 for _ in range(index):
@@ -22,6 +24,8 @@ return node
 ## 추가
 
 ### append(value)
+
+- 시간복잡도: O(1)
 
 ```python
 if not self.head:
@@ -43,6 +47,8 @@ self.tail = new_node
 
 ### insert(index, value)
 
+- 시간복잡도: O(N)
+
 ```python
 prev_node = self.get_node(index - 1)
 new_node.next_ = prev_node.next_
@@ -56,6 +62,8 @@ prev_node.next_ = new_node
 ## 삭제
 
 ### remove(index)
+
+- 시간복잡도: O(N)
 
 ```python
 prev_node = self.__get_node(index - 1)
